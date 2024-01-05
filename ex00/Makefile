@@ -6,7 +6,7 @@
 #    By: babels <babels@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 15:28:50 by babels            #+#    #+#              #
-#    Updated: 2023/12/14 13:46:12 by babels           ###   ########.fr        #
+#    Updated: 2024/01/05 12:15:56 by babels           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SOURCES = main.cpp Animal.Class.cpp Cat.Class.cpp Dog.Class.cpp WrongAnimals.Cla
 OBJECTS = $(SOURCES:.cpp=.o)
 
 CC = c++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 all: ${NAME}
 

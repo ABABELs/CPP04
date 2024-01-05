@@ -6,12 +6,12 @@
 #    By: babels <babels@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 15:28:50 by babels            #+#    #+#              #
-#    Updated: 2024/01/05 12:11:55 by babels           ###   ########.fr        #
+#    Updated: 2024/01/05 12:11:49 by babels           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = burn
-SOURCES = main.cpp Animal.Class.cpp Cat.Class.cpp Dog.Class.cpp WrongAnimals.Class.cpp WrongCat.Class.cpp Brain.Class.cpp \
+NAME = materia
+SOURCES = main.cpp AMateria.Class.cpp Character.Class.cpp Cure.Class.cpp Ice.Class.cpp MateriaSource.Class.cpp \
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
