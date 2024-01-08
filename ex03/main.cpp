@@ -6,7 +6,7 @@
 /*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 15:48:37 by babels            #+#    #+#             */
-/*   Updated: 2024/01/05 12:24:42 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/08 13:19:44 by babels           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,15 @@ int main()
 	me->equip(tmp);
 
 	ICharacter* bob = new Character("bob");
+	// me->equip(tmp->clone());
 	
 	me->use(0, *bob);
 	me->use(1, *bob);
+	me->use(2, *bob);
+
+	// me->unequip(0);
+	// me->unequip(1);
+	// me->unequip(2);
 	delete bob;
 	delete me;
 	delete src;
