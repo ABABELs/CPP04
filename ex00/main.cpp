@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 12:59:44 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:49:45 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 09:54:43 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,11 @@ int main()
 
 	const WrongAnimals* wrongMeta = new WrongAnimals();
 	const WrongAnimals* wrongJ = new WrongCat();
-	const WrongCat* wrongCat = new WrongCat();
 	
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
 	std::cout << wrongJ->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
+	i->makeSound(); 
 	j->makeSound();
 	meta->makeSound();
 	wrongJ->makeSound();

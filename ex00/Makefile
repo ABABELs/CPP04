@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: babels <babels@student.42.fr>              +#+  +:+       +#+         #
+#    By: aabel <aabel@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 15:28:50 by babels            #+#    #+#              #
-#    Updated: 2024/01/05 12:15:56 by babels           ###   ########.fr        #
+#    Updated: 2024/01/18 09:47:16 by aabel            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,16 +15,16 @@ SOURCES = main.cpp Animal.Class.cpp Cat.Class.cpp Dog.Class.cpp WrongAnimals.Cla
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
-CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 all: ${NAME}
 
 %.o: %.c++
-	$(CC) -c $(CFLAGS) -g3 $< -o $@ -I
+	$(CXX) -c $(CXXFLAGS) -g3 $< -o $@ -I
 
 ${NAME}: ${OBJECTS}
-	$(CC) $(CFLAGS) -g3 -o ${NAME} ${OBJECTS}
+	$(CXX) $(CXXFLAGS) -g3 -o ${NAME} ${OBJECTS}
 
 clean:
 	rm -f ${OBJECTS}

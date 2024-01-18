@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.Class.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 12:57:26 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:25:32 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 09:37:10 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class Animal
 {
     public:
         Animal(void);
-        Animal(std::string type);
         Animal(Animal const &src);
         virtual ~Animal(void);
         Animal &operator=(Animal const &rhs);

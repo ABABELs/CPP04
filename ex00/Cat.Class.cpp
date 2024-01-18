@@ -3,29 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.Class.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 13:04:49 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:22:08 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 09:40:23 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.Class.hpp"
 
-Cat::Cat(void)
+Cat::Cat(void) : Animal()
 {
     std::cout << "Cat created" << std::endl;
     _type = "Cat";
 }
 
-Cat::Cat(std::string type) : Animal(type)
+Cat::Cat(Cat const &src) : Animal()
 {
-    std::cout << "Cat created" << std::endl;
-}
-
-Cat::Cat(Cat const &src)
-{
-    *this = src;
+    this->_type = src._type;
     std::cout << "Cat created" << std::endl;
 }
 
@@ -36,8 +31,8 @@ Cat::~Cat(void)
 
 Cat &Cat::operator=(Cat const &rhs)
 {
-    if (this != &rhs)
-        this->_type = rhs._type;
+    std::cout << "Cat operator=" << std::endl;
+    this->_type = rhs._type;
     return (*this);
 }
 

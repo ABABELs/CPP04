@@ -3,29 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.Class.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 13:32:17 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:47:08 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:46:07 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.Class.hpp"
 
-WrongCat::WrongCat(void)
+WrongCat::WrongCat(void) : WrongAnimals()
 {
     std::cout << "WrongCat created" << std::endl;
     _type = "WrongCat";
 }
 
-WrongCat::WrongCat(std::string type) : WrongAnimals(type)
+WrongCat::WrongCat(WrongCat const &src) : WrongAnimals()
 {
-    std::cout << "WrongCat created" << std::endl;
-}
-
-WrongCat::WrongCat(WrongCat const &src)
-{
-    *this = src;
+    this->_type =  src._type;
     std::cout << "WrongCat created" << std::endl;
 }
 

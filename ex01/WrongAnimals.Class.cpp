@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimals.Class.cpp                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 13:29:22 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:41:59 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:43:11 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,9 @@ WrongAnimals::WrongAnimals(void)
     _type = "WrongAnimals";
 }
 
-WrongAnimals::WrongAnimals(std::string type) : _type(type)
-{
-    std::cout << "WrongAnimals created" << std::endl;
-}
-
 WrongAnimals::WrongAnimals(WrongAnimals const &src)
 {
-    *this = src;
+    _type = src._type;
     std::cout << "WrongAnimal created" << std::endl;
 }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.Class.cpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 15:45:34 by babels            #+#    #+#             */
-/*   Updated: 2024/01/04 15:46:23 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:15:47 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ MateriaSource::MateriaSource(MateriaSource const &src)
 MateriaSource::~MateriaSource(void)
 {
     std::cout << "MateriaSource destroyed" << std::endl;
+    for (int i = 0; i < 4; i++)
+    {
+        if (_materia[i])
+            delete _materia[i];
+    }
+    return ;
 }
 
 MateriaSource &MateriaSource::operator=(MateriaSource const &rhs)

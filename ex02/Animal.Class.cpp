@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.Class.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 12:58:02 by babels            #+#    #+#             */
-/*   Updated: 2024/01/04 13:39:47 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 10:47:47 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Animal::Animal(void)
 
 Animal::Animal(Animal const &src)
 {
-    *this = src;
+    _type = src._type;
     std::cout << "Animal created" << std::endl;
 }
 
@@ -31,8 +31,7 @@ Animal::~Animal(void)
 
 Animal &Animal::operator=(Animal const &rhs)
 {
-    if (this != &rhs)
-        this->_type = rhs._type;
+    _type = rhs._type;
     return (*this);
 }
 

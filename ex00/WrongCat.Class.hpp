@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.Class.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 13:31:35 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:45:21 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 09:46:46 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,8 @@ class WrongCat : public WrongAnimals
 {
     public:
         WrongCat(void);
-        WrongCat(std::string type);
-        WrongCat(WrongCat const &src);
         virtual ~WrongCat(void);
-        WrongCat &operator=(WrongCat const &rhs);
         void makeSound(void) const;
-    protected:
 };
 
 #endif

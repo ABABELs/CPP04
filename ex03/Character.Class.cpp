@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.Class.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 15:33:34 by babels            #+#    #+#             */
-/*   Updated: 2024/01/05 13:32:44 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:27:51 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ Character::~Character(void)
     std::cout << "Character destroyed" << std::endl;
     for (int i = 0; i < 4; i++)
     {
-        if (this->_inventory[i] != NULL)
-            delete this->_inventory[i];
+        if (_inventory[i])
+            delete _inventory[i];
     }
     return ;
 }
@@ -76,8 +76,14 @@ void Character::equip(AMateria* m)
 
 void Character::unequip(int idx)
 {
-    if (idx >= 0 && idx < 4)
-        this->_inventory[idx] = NULL;
+    // if (idx >= 0 && idx < 4)
+    //     this->_inventory[idx] = NULL;
+    if (!_inventory[idx])
+    {
+        _inventory[idx] = 0;
+    }
+    else
+        std::cout << "No item !" <<std::endl;
 }
 
 void Character::use(int idx, ICharacter& target)

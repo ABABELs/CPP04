@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 15:48:37 by babels            #+#    #+#             */
-/*   Updated: 2024/01/08 13:19:44 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:28:23 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int main()
 	AMateria* tmp;
 	tmp = src->createMateria("ice");
 	me->equip(tmp);
+	// delete tmp;
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
 
@@ -36,7 +37,7 @@ int main()
 	
 	me->use(0, *bob);
 	me->use(1, *bob);
-	me->use(2, *bob);
+	// me->use(2, *bob);
 
 	// me->unequip(0);
 	// me->unequip(1);
@@ -44,5 +45,6 @@ int main()
 	delete bob;
 	delete me;
 	delete src;
+	
 	return 0;
 }

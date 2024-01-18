@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   AMateria.Class.cpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 13:55:59 by babels            #+#    #+#             */
-/*   Updated: 2024/01/04 16:05:05 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 11:27:27 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,6 @@ std::string const &AMateria::getType(void) const
 {
     return (this->_type);
 }
+
+
 

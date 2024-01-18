@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.Class.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 13:11:13 by babels            #+#    #+#             */
-/*   Updated: 2023/12/14 13:25:35 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 09:42:59 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class Dog : public Animal
 {
     public:
         Dog(void);
-        Dog(std::string type);
         Dog(Dog const &src);
         virtual ~Dog(void);
         Dog &operator=(Dog const &rhs);

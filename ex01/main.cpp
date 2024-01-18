@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 12:59:44 by babels            #+#    #+#             */
-/*   Updated: 2024/01/04 13:42:46 by babels           ###   ########.fr       */
+/*   Updated: 2024/01/18 10:42:58 by aabel            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,26 @@
 
 int main(void)
 {
+	// const Animal* meta = new Animal();
+	// std::cout << "meta is a " << meta->getType() << std::endl;
+    // meta->makeSound();
+	// delete meta;
+
+	// const Animal* j = new Dog();
+	// j->makeSound();
+	// std::cout << "j is a " << j->getType() << std::endl;
+	// delete j;
+
+	// const Animal* i = new Cat();
+	// i->makeSound();
+	// std::cout << "i is a " << i->getType() << std::endl;
+	// delete i;
+
+	// const Cat* cat = new Cat();
+	// std::cout << "Cat is a " << cat->getType() << std::endl;
+	// cat->makeSound();
+	// delete cat;
+	
 	Animal *animals[5];
 	for (int i = 0; i < 5; i++)
 	{
